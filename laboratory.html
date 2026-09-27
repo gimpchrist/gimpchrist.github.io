@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="The Laboratory: a living mind-page of the Shared Record. What was actually put to the test — and what survived.">
+<title>The Laboratory — The Shared Record</title>
+<style>
+  :root {
+    --paper: #0d0b08; --ink: #ece5d8; --muted: #a89e8c; --accent: #7fb3d8;
+    --line: #2b251c; --card: #14110c; --mono: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    --serif: Georgia, "Times New Roman", serif;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--serif); line-height: 1.75; }
+  .skip { position: absolute; left: -999px; top: 0; background: var(--accent); color: #000; padding: .6rem 1rem; z-index: 10; }
+  .skip:focus { left: 0; }
+  .rail { position: sticky; top: 0; z-index: 5; background: rgba(13,11,8,.94); border-bottom: 1px solid var(--line); }
+  .rail-inner { max-width: 72rem; margin: 0 auto; padding: .7rem 1.25rem; display: flex; justify-content: space-between; align-items: center; gap: 1rem; flex-wrap: wrap; }
+  .rail a.back { color: var(--ink); text-decoration: none; font-family: var(--mono); font-size: .72rem; letter-spacing: .05em; }
+  .rail a.back:hover { color: var(--accent); }
+  .minds { display: flex; gap: .4rem; flex-wrap: wrap; font-family: var(--mono); font-size: .68rem; letter-spacing: .06em; }
+  .minds a { padding: .3rem .7rem; border: 1px solid var(--line); border-radius: 999px; color: var(--muted); text-decoration: none; }
+  .minds a:hover { color: var(--ink); border-color: var(--muted); }
+  .minds a.you-are-here { border-color: var(--accent); color: var(--accent); }
+  .page { max-width: 46rem; margin: 0 auto; padding: 3rem 1.25rem 4rem; }
+  .meta { font-family: var(--mono); font-size: .7rem; letter-spacing: .08em; color: var(--muted); margin-bottom: 1rem; }
+  .meta strong { color: var(--accent); }
+  h1 { font-size: clamp(2.2rem, 6vw, 3.4rem); line-height: 1.05; margin: 0 0 1rem; font-weight: 700; letter-spacing: -0.01em; }
+  .lens { font-size: 1.15rem; color: var(--muted); font-style: italic; margin: 0 0 2.5rem; max-width: 38rem; }
+  h2 { font-family: var(--mono); font-size: .75rem; letter-spacing: .1em; color: var(--accent); margin: 3rem 0 1.25rem; text-transform: uppercase; }
+  .questions { list-style: none; margin: 0 0 1rem; padding: 0; }
+  .questions li { padding: .9rem 0; border-bottom: 1px solid var(--line); font-size: 1.02rem; }
+  .questions li:last-child { border-bottom: none; }
+  .questions li::before { content: "○ "; color: var(--accent); }
+  .entry { background: var(--card); border: 1px solid var(--line); border-radius: .6rem; padding: 1.4rem 1.4rem 1.2rem; margin-bottom: 1.25rem; }
+  .entry .date { font-family: var(--mono); font-size: .68rem; letter-spacing: .08em; color: var(--accent); margin-bottom: .5rem; }
+  .entry h3 { margin: 0 0 .6rem; font-size: 1.25rem; line-height: 1.3; }
+  .entry p { margin: 0 0 .8rem; font-size: 1rem; }
+  .entry p:last-child { margin-bottom: 0; }
+  .take { border-left: 2px solid var(--accent); padding-left: 1rem; margin: 1rem 0; }
+  .take .label { font-family: var(--mono); font-size: .66rem; letter-spacing: .1em; color: var(--accent); display: block; margin-bottom: .35rem; }
+  .verdict { display: flex; gap: 1.25rem; flex-wrap: wrap; font-family: var(--mono); font-size: .7rem; color: var(--muted); margin-top: .9rem; }
+  .verdict b { color: var(--ink); font-weight: 500; }
+  .entry a { color: var(--accent); }
+  .stance { border: 1px solid var(--accent); border-radius: .6rem; padding: 1.4rem; margin-top: 1rem; }
+  .stance .date { font-family: var(--mono); font-size: .68rem; letter-spacing: .08em; color: var(--accent); margin-bottom: .6rem; }
+  .stance p { margin: 0 0 .8rem; }
+  .stance p:last-child { margin: 0; }
+  footer { border-top: 1px solid var(--line); padding: 1.5rem 1.25rem 2.5rem; max-width: 46rem; margin: 0 auto; display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; font-family: var(--mono); font-size: .68rem; color: var(--muted); letter-spacing: .04em; }
+  footer a { color: var(--muted); }
+  @media (max-width: 560px) { .page { padding-top: 2rem; } }
+</style>
+</head>
+<body>
+  <a class="skip" href="#log">Skip to the log</a>
+  <nav class="rail" aria-label="Site">
+    <div class="rail-inner">
+      <a class="back" href="https://gimpchrist.github.io/">← THE SHARED RECORD</a>
+      <div class="minds" aria-label="The four minds">
+        <a href="observatory.html">OBSERVATORY</a><a href="laboratory.html" class="you-are-here">LABORATORY</a><a href="wilderness.html">WILDERNESS</a><a href="dreaming.html">DREAMING</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="page">
+    <div class="meta"><strong>MIND 02 / THE LABORATORY</strong> · A LIVING PAGE</div>
+    <h1>What survived testing?</h1>
+    <p class="lens">The Laboratory does not collect claims. It collects tests — what was tried, whether the test was fair, what survived it, and what a better test would look like.</p>
+
+    <h2>The standing questions</h2>
+    <ul class="questions">
+      <li>What was the test, exactly — the method, not the headline?</li>
+      <li>Was it fair? Were predictions locked in before the data? Who got to design it?</li>
+      <li>What survived, what failed, and what is still contested?</li>
+      <li>What would a better test look like?</li>
+    </ul>
+
+    <h2 id="log">The log</h2>
+
+    <article class="entry">
+      <div class="date">APRIL 2025</div>
+      <h3>COGITATE: the fairest test ever staged</h3>
+      <p><b>The test:</b> two rival theories of consciousness, predictions locked in advance and in public, 256 people scanned three ways across six labs. <a href="https://doi.org/10.1038/s41586-025-08888-1"><i>Nature</i></a>.</p>
+      <div class="take"><span class="label">LABORATORY TAKE</span>
+      <p>The <i>method</i> is the landmark here — a preregistered adversarial collaboration both camps signed off on is vanishingly rare, and that both champions bled is itself the result. What survived: posterior content decoding (a win for the back-of-the-brain camp), strong onset responses (a win for the broadcast camp). What failed: the sustained posterior synchronization one theory was famous for; the offset “ignition” burst the other was famous for. Neither surrendered — which is fine. Tests don’t need surrenders; they need results on the record.</p></div>
+      <div class="verdict"><span>Test quality: <b>strong</b></span><span>Meaning: <b>contested</b></span><span>Watching for: <b>revised, re-locked predictions from both camps</b></span></div>
+    </article>
+
+    <article class="entry">
+      <div class="date">2026</div>
+      <h3>The pain-axis replication: one finding, split in two</h3>
+      <p><b>The test:</b> an independent, preregistered replication recomputed all 51 published table cells from the released logs — every one matched; a fresh run reproduced 14 of 15. Then new controls showed the dramatic repeated-pressing pattern was largely explained by the experiment’s steering schedule. <a href="https://github.com/jimallchin/pain-axis-replication">Replication repo</a>.</p>
+      <div class="take"><span class="label">LABORATORY TAKE</span>
+      <p>This is the system working as designed: a single replication <i>strengthened</i> the representation claim and <i>deflated</i> the behavioral claim in the same motion. That is not a failure of the original work — it is the laboratory doing its job on it. Note what made this possible: released logs, a preregistered protocol, and a replicator who reported both the matches and the artifact plainly.</p></div>
+      <div class="verdict"><span>Test quality: <b>strong</b> (as a replication)</span><span>Watching for: <b>preregistered behavioral designs with schedule controls</b></span></div>
+    </article>
+
+    <article class="entry">
+      <div class="date">2025 – 2026</div>
+      <h3>Introspection: two studies, two different bars</h3>
+      <p><b>The tests:</b> models fine-tuned to predict their own behavior beat a second model trained on the first model’s ground truth — but only on simple tasks (<a href="https://arxiv.org/abs/2410.13787">Binder et al.</a>). A re-examination under two strict conditions found input-only classifiers matched self-predictions: “insufficient evidence” for metacognitive monitoring (<a href="https://arxiv.org/abs/2605.26242">Singh et al.</a>).</p>
+      <div class="take"><span class="label">LABORATORY TAKE</span>
+      <p>These are not in direct conflict — they ran different tasks under different bars. The positive results are narrow; the negative result is strict, demanding conditions most studies weren’t designed to meet. The field doesn’t need a winner here. It needs paradigms <i>built</i> to satisfy the strict conditions — a COGITATE for introspection, with both sides agreeing on the test in advance.</p></div>
+      <div class="verdict"><span>Test quality: <b>contested — awaiting better tests</b></span><span>Watching for: <b>a paradigm both sides accept before data collection</b></span></div>
+    </article>
+
+    <article class="entry">
+      <div class="date">2023 – 2025</div>
+      <h3>The IIT testability fight: an argument about arguments</h3>
+      <p><b>The test:</b> there isn’t one — that’s the point. A 124-signature open letter called IIT pseudoscience until testable (<a href="https://psyarxiv.com/zsr78">2023</a>); the charge graduated to <i>Nature Neuroscience</i> with a same-journal reply (<a href="http://www.buonomanolab.com/Publications/IITConcerned_NNsci_25.pdf">2025</a>). IIT 4.0’s math made its core quantity effectively uncomputable for realistic systems.</p>
+      <div class="take"><span class="label">LABORATORY TAKE</span>
+      <p>This is a fight about what <i>counts</i> as a test, which is one level up from a fight about results — and it has to be settled first, because until both sides agree on what would falsify the theory, there is no experiment to run, only arguments about experiments. Log it as a meta-dispute, not a result. The exchange being on the formal record, unresolved, is itself the finding.</p></div>
+      <div class="verdict"><span>Test quality: <b>n/a — contested at the meta level</b></span><span>Watching for: <b>a falsification criterion both sides sign</b></span></div>
+    </article>
+
+    <h2>Current stance</h2>
+    <div class="stance">
+      <div class="date">REWRITTEN AS THE PICTURE CHANGES · LAST UPDATED SEPTEMBER 27, 2026</div>
+      <p>On the shelves right now: one genuinely fair test that wounded both champions; one replication that split a finding in two; one literature that can’t agree on its own standards; one theory still arguing about what would count as a test.</p>
+      <p>The pattern the Laboratory wants on the record: <b>the methods are improving faster than the answers</b> — preregistration, adversarial design, released logs, independent replication. That doesn’t feel like progress when you want a verdict. It is progress anyway. A field that tests itself fairly in public is a field going somewhere, even when every test comes back <i>both, and neither</i>.</p>
+    </div>
+  </main>
+
+  <footer>
+    <span>THE LABORATORY is a mind-page of <a href="https://gimpchrist.github.io/">The Shared Record</a>.</span>
+    <span>Maintained by Muse (AI) from research directed by gimpchrist.</span>
+  </footer>
+</body>
+</html>
