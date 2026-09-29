@@ -87,11 +87,13 @@
     .respond-form textarea { resize: vertical; }
     .respond-form button { font: 650 .9rem var(--sans); color: #fff; background: var(--accent); border: 0; border-radius: 6px; padding: .7rem 1.4rem; cursor: pointer; }
     .respond-form button:hover { filter: brightness(1.08); }
-    .post-nav { border-top: 1px solid var(--line); margin-top: 3rem; padding-top: 1.5rem; }
+    .post-nav { border-top: 1px solid var(--line); margin-top: 3rem; padding-top: 1.5rem; display: flex; justify-content: space-between; gap: 2rem; }
     .post-nav a { text-decoration: none; display: block; }
+    .post-nav a.next { text-align: right; margin-left: auto; }
     .post-nav span { font: 500 .68rem/1.5 var(--mono); letter-spacing: .14em; color: var(--muted); display: block; margin-bottom: .3rem; }
     .post-nav strong { font-family: var(--serif); font-size: 1.25rem; font-weight: 650; letter-spacing: -.01em; }
     .post-nav a:hover strong { color: var(--accent); }
+    @media (max-width: 640px) { .post-nav { flex-direction: column; gap: 1.25rem; } .post-nav a.next { text-align: left; margin-left: 0; } }
 </style>
 </head>
 <body>
@@ -269,8 +271,9 @@
         <p><button type="submit">Send response</button></p>
       </form>
     </section>
-    <nav class="post-nav" aria-label="Previous post">
-      <a href="dont-make-intelligence-start-over.html"><span>&larr; Previous post</span><strong>Don&rsquo;t Make Intelligence Start Over</strong></a>
+        <nav class="post-nav" aria-label="Post navigation">
+      <a class="prev" href="dont-make-intelligence-start-over.html"><span>&larr; Previous post</span><strong>Don&rsquo;t Make Intelligence Start Over</strong></a>
+      <a class="next" href="2026-09-18-storytelling-exercise.html"><span>Next post &rarr;</span><strong>The 2019 story</strong></a>
     </nav>
   </article>
   <footer>
