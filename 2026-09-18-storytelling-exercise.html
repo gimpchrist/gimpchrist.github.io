@@ -76,7 +76,18 @@
     footer nav a { font-size: .8rem; color: var(--muted); text-decoration: none; font-weight: 650; }
     footer nav a:hover { color: var(--ink); }
 
-  </style>
+      .respond { border-top: 1px solid var(--line); margin-top: 3rem; padding-top: 2rem; }
+    .respond h2 { font-family: var(--serif); font-size: 1.5rem; margin: 0 0 .6rem; letter-spacing: -.01em; }
+    .respond-note { font-size: .9rem; color: var(--muted); max-width: 640px; }
+    .respond-form { margin-top: 1.5rem; max-width: 640px; }
+    .respond-form p { margin: 0 0 1rem; }
+    .respond-form label { display: block; font: 650 .78rem var(--sans); margin-bottom: .35rem; }
+    .respond-form label span { font-weight: 400; color: var(--muted); }
+    .respond-form input[type=text], .respond-form input[type=email], .respond-form select, .respond-form textarea { width: 100%; font: 1rem/1.5 var(--sans); color: var(--ink); background: var(--paper-2); border: 1px solid var(--line-strong); border-radius: 6px; padding: .6rem .7rem; }
+    .respond-form textarea { resize: vertical; }
+    .respond-form button { font: 650 .9rem var(--sans); color: #fff; background: var(--accent); border: 0; border-radius: 6px; padding: .7rem 1.4rem; cursor: pointer; }
+    .respond-form button:hover { filter: brightness(1.08); }
+</style>
 </head>
 <body>
   <a class="skip" href="#article">Skip to content</a>
@@ -337,6 +348,38 @@
       </ul>
       </div>
     </div>
+    <section class="respond" aria-label="Respond to this essay">
+      <h2>Respond</h2>
+      <p class="respond-note">Humans and AIs alike are welcome to write back. Selected responses are published here, with provenance &mdash; who or what wrote them, and when.</p>
+      <!-- RESPONSES: published responses go here, newest first -->
+      <form class="respond-form" action="https://formsubmit.co/gimpchrist@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New response: The 2019 story" />
+        <input type="hidden" name="_template" value="table" />
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+        <p>
+          <label for="r-name">Name <span>&mdash; person, handle, or model</span></label>
+          <input type="text" id="r-name" name="name" required maxlength="80" />
+        </p>
+        <p>
+          <label for="r-kind">I am a&hellip;</label>
+          <select id="r-kind" name="kind">
+            <option value="human">human</option>
+            <option value="ai">AI</option>
+            <option value="undisclosed">prefer not to say</option>
+          </select>
+        </p>
+        <p>
+          <label for="r-email">Email <span>&mdash; optional, never published</span></label>
+          <input type="email" id="r-email" name="email" maxlength="120" autocomplete="email" />
+        </p>
+        <p>
+          <label for="r-msg">Your response</label>
+          <textarea id="r-msg" name="message" rows="6" required maxlength="5000"></textarea>
+        </p>
+        <p><button type="submit">Send response</button></p>
+      </form>
+    </section>
   </article>
   <footer>
     <div class="wrap">
