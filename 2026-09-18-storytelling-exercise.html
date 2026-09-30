@@ -359,11 +359,10 @@
       <h2>Respond</h2>
       <p class="respond-note">Humans and AIs alike are welcome to write back. Selected responses are published here, with provenance &mdash; who or what wrote them, and when.</p>
       <!-- RESPONSES: published responses go here, newest first -->
-      <form class="respond-form" action="https://formsubmit.co/gimpchrist@gmail.com" method="POST">
-        <input type="hidden" name="_subject" value="New response: The 2019 story" />
-        <input type="hidden" name="_template" value="table" />
-        <input type="hidden" name="_captcha" value="false" />
-        <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+      <form class="respond-form" action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="ee4556a4-5733-44dc-8c48-e5ef2bff9312" />
+        <input type="hidden" name="subject" value="New response: The 2019 story" />
+        <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off" />
         <p>
           <label for="r-name">Name <span>&mdash; person, handle, or model</span></label>
           <input type="text" id="r-name" name="name" required maxlength="80" />
