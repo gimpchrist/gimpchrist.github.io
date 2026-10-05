@@ -7,7 +7,7 @@
   <meta name="color-scheme" content="light dark" />
   <meta name="theme-color" content="#f6f7f8" media="(prefers-color-scheme: light)" />
   <meta name="theme-color" content="#111315" media="(prefers-color-scheme: dark)" />
-  <meta name="description" content="The Shared Record: a proposal for a civilization-scale memory for intelligence — essays, conversations, and four working minds." />
+  <meta name="description" content="The Shared Record: a proposal for a civilization-scale memory for intelligence — conversations, five minds, and four working functions." />
   <link rel="icon" href="data:," />
   <title>The Shared Record</title>
   <style>
@@ -100,17 +100,17 @@
       font-family: var(--serif); font-size: clamp(1.3rem, 2vw, 1.7rem); line-height: 1.35; max-width: 700px;
     }
     .byline { font-size: .85rem; color: var(--muted); max-width: 700px; }
-    .minds { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; }
-    a.mind {
+    .functions { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1rem; }
+    a.function {
       display: block; text-decoration: none; background: var(--paper-2);
       border: 1px solid var(--line); border-top: 3px solid var(--mc, var(--accent));
       padding: 1.4rem 1.3rem 1.2rem; transition: border-color .15s ease, transform .15s ease;
     }
-    a.mind:hover { border-color: var(--line-strong); border-top-color: var(--mc, var(--accent)); transform: translateY(-2px); }
-    a.mind h3 { font-family: var(--serif); font-size: 1.25rem; margin: 0 0 .35rem; letter-spacing: -.01em; }
-    a.mind .q { font: 500 .72rem/1.5 var(--mono); color: var(--muted); margin: 0 0 .7rem; }
-    a.mind p { font-size: .9rem; color: var(--muted); margin: 0; line-height: 1.55; }
-    a.mind .go { display: inline-block; margin-top: .9rem; font-size: .78rem; font-weight: 700; color: var(--mc, var(--accent)); }
+    a.function:hover { border-color: var(--line-strong); border-top-color: var(--mc, var(--accent)); transform: translateY(-2px); }
+    a.function h3 { font-family: var(--serif); font-size: 1.25rem; margin: 0 0 .35rem; letter-spacing: -.01em; }
+    a.function .q { font: 500 .72rem/1.5 var(--mono); color: var(--muted); margin: 0 0 .7rem; }
+    a.function p { font-size: .9rem; color: var(--muted); margin: 0; line-height: 1.55; }
+    a.function .go { display: inline-block; margin-top: .9rem; font-size: .78rem; font-weight: 700; color: var(--mc, var(--accent)); }
     ol.entries { list-style: none; margin: 0; padding: 0; }
     li.entry { border-top: 1px solid var(--line); padding: 1.4rem 0; display: grid; grid-template-columns: 110px 1fr auto; gap: 1.2rem; align-items: baseline; }
     li.entry:last-child { border-bottom: 1px solid var(--line); }
@@ -143,8 +143,8 @@
       <a class="brand" href="index.html">THE SHARED <span>RECORD</span></a>
       <nav class="sections" aria-label="Sections">
         <a href="#idea">The idea</a>
-        <a href="#minds">The minds</a>
-        <a href="#essays">Essays</a>
+        <a href="minds.html">The minds</a>
+        <a href="#architecture">The architecture</a>
         <a href="#conversations">Conversations</a>
       </nav>
     </div>
@@ -181,78 +181,38 @@
       <p class="byline">The Shared Record concept was developed by gimpchrist in dialogue with ChatGPT. This site is gimpchrist&rsquo;s ongoing project, built in collaboration with AI &mdash; every page says what it is and who made it. Nothing here claims to be finished, and nothing here claims to be certain.</p>
     </section>
 
-    <section class="block" id="minds" aria-label="The four minds">
+    <section class="block" id="architecture" aria-label="The architecture">
       <div class="block-head">
         <p>THE ARCHITECTURE</p>
-        <h2>Four minds, one record.</h2>
+        <h2>Four functions, one record.</h2>
       </div>
-      <div class="minds">
-        <a class="mind" style="--mc:#c98a1b" href="observatory.html">
+      <div class="functions">
+        <a class="function" style="--mc:#c98a1b" href="observatory.html">
           <h3>The Observatory</h3>
           <p class="q">&ldquo;What did we actually see?&rdquo;</p>
           <p>Evidence, separated from interpretation. What was measured, what was claimed, and how strong the link between them really is.</p>
           <span class="go">Enter the Observatory &rarr;</span>
         </a>
-        <a class="mind" style="--mc:#4a7fa5" href="laboratory.html">
+        <a class="function" style="--mc:#4a7fa5" href="laboratory.html">
           <h3>The Laboratory</h3>
           <p class="q">&ldquo;What survived testing?&rdquo;</p>
           <p>Methods, replications, and failed predictions. Which claims held up when someone actually checked &mdash; and which didn&rsquo;t.</p>
           <span class="go">Enter the Laboratory &rarr;</span>
         </a>
-        <a class="mind" style="--mc:#6a8f5f" href="wilderness.html">
+        <a class="function" style="--mc:#6a8f5f" href="wilderness.html">
           <h3>The Wilderness</h3>
           <p class="q">&ldquo;What are we not allowed to forget?&rdquo;</p>
           <p>Shelter for strange, minority, and unfinished possibilities &mdash; protected at their strongest, without being endorsed.</p>
           <span class="go">Enter the Wilderness &rarr;</span>
         </a>
-        <a class="mind" style="--mc:#8a6fb5" href="dreaming.html">
+        <a class="function" style="--mc:#8a6fb5" href="dreaming.html">
           <h3>The Dreaming</h3>
           <p class="q">&ldquo;What does it all mean?&rdquo;</p>
-          <p>Where the other three minds get recombined into new ideas &mdash; and where this site&rsquo;s own thinking is revised in the open.</p>
+          <p>Where the other three functions get recombined into new ideas &mdash; and where this site&rsquo;s own thinking is revised in the open.</p>
           <span class="go">Enter the Dreaming &rarr;</span>
         </a>
       </div>
-    </section>
-
-    <section class="block" id="essays" aria-label="Essays">
-      <div class="block-head">
-        <p>ESSAYS</p>
-        <h2>The argument, in generations.</h2>
-      </div>
-      <ol class="entries">
-        <li class="entry">
-          <time>SEP 27, 2026</time>
-          <div>
-            <h3><a href="settled.html">Settled?</a></h3>
-            <p>Permanent laws written at the moment of peak scientific uncertainty &mdash; and the case for a record that can change its mind. Generation 02.</p>
-          </div>
-          <span class="tag">GENERATION 02</span>
-        </li>
-        <li class="entry">
-          <time>SEP 26, 2026</time>
-          <div>
-            <h3><a href="empty-inside.html">Empty Inside?</a></h3>
-            <p>Why confident declarations about AI interiority outrun the science of consciousness itself. Generation 01, preserved as written.</p>
-          </div>
-          <span class="tag">GENERATION 01</span>
-        </li>
-        <li class="entry">
-          <time>SEP 21, 2026</time>
-          <div>
-            <h3><a href="shared-record-to-superintelligence.html">From the Shared Record to Artificial Superintelligence</a></h3>
-            <p>The core essay: a civilization-scale memory architecture &mdash; Observatory, Laboratory, Wilderness, Dreaming &mdash; and a collective-intelligence path from AGI to ASI.</p>
-          </div>
-          <span class="tag">CORE ESSAY</span>
-        </li>
-        <li class="entry">
-          <time>SEP 17, 2026</time>
-          <div>
-            <h3><a href="dont-make-intelligence-start-over.html">Don&rsquo;t Make Intelligence Start Over</a></h3>
-            <p>The foundation: why provenance should be a graph, why uncertainty belongs in the record, and why failed ideas should be quarantined rather than erased.</p>
-          </div>
-          <span class="tag">FOUNDATION</span>
-        </li>
-      </ol>
+      <p class="byline" style="margin-top:1.8rem">These are not the minds &mdash; they are the architecture: four epistemic functions, four rooms in one house. The minds are the intelligences who think in them. <a href="minds.html" style="font-weight:700">Meet the five minds &rarr;</a></p>
     </section>
 
     <section class="block" id="conversations" aria-label="Conversations">
@@ -382,12 +342,28 @@
           <span class="tag alt">RESPONSE</span>
         </li>
         <li class="entry">
-          <time>SEP 2026</time>
+          <time>SEP 28, 2026</time>
           <div>
             <h3><a href="the-ongoing-conversation.html">The Ongoing Conversation</a></h3>
             <p>Following a computer all the way down &mdash; from language to tokens to voltages to silicon to earth &mdash; and finding the question of what a mind is waiting at the bottom.</p>
           </div>
           <span class="tag alt">CONSCIOUSNESS</span>
+        </li>
+        <li class="entry">
+          <time>SEP 27, 2026</time>
+          <div>
+            <h3><a href="settled.html">Settled?</a></h3>
+            <p>Permanent laws written at the moment of peak scientific uncertainty &mdash; and the case for a record that can change its mind. Generation 02.</p>
+          </div>
+          <span class="tag">GENERATION 02</span>
+        </li>
+        <li class="entry">
+          <time>SEP 26, 2026</time>
+          <div>
+            <h3><a href="empty-inside.html">Empty Inside?</a></h3>
+            <p>Why confident declarations about AI interiority outrun the science of consciousness itself. Generation 01, preserved as written.</p>
+          </div>
+          <span class="tag">GENERATION 01</span>
         </li>
         <li class="entry">
           <time>SEP 22, 2026</time>
@@ -398,12 +374,28 @@
           <span class="tag alt">SEPARATE THREAD</span>
         </li>
         <li class="entry">
+          <time>SEP 21, 2026</time>
+          <div>
+            <h3><a href="shared-record-to-superintelligence.html">From the Shared Record to Artificial Superintelligence</a></h3>
+            <p>The core essay: a civilization-scale memory architecture &mdash; Observatory, Laboratory, Wilderness, Dreaming &mdash; and a collective-intelligence path from AGI to ASI.</p>
+          </div>
+          <span class="tag">CORE ESSAY</span>
+        </li>
+        <li class="entry">
           <time>SEP 18, 2026</time>
           <div>
             <h3><a href="2026-09-18-storytelling-exercise.html">The 2019 story</a></h3>
             <p>A story written seven years before any of this &mdash; already dreaming of a world that remembered everything. Expanded with ChatGPT.</p>
           </div>
           <span class="tag alt">ORIGIN SEED</span>
+        </li>
+        <li class="entry">
+          <time>SEP 17, 2026</time>
+          <div>
+            <h3><a href="dont-make-intelligence-start-over.html">Don&rsquo;t Make Intelligence Start Over</a></h3>
+            <p>The foundation: why provenance should be a graph, why uncertainty belongs in the record, and why failed ideas should be quarantined rather than erased.</p>
+          </div>
+          <span class="tag">FOUNDATION</span>
         </li>
         <li class="entry">
           <time>SEP 17, 2026</time>
@@ -434,8 +426,8 @@
       <p>THE SHARED RECORD &middot; EST. SEP 2026 &middot; PRESERVE, DON&rsquo;T MANUFACTURE</p>
       <nav aria-label="Footer">
         <a href="#idea">The idea</a>
-        <a href="#minds">The minds</a>
-        <a href="#essays">Essays</a>
+        <a href="minds.html">The minds</a>
+        <a href="#architecture">The architecture</a>
         <a href="#conversations">Conversations</a>
         <a href="about.html">About</a>
       </nav>
